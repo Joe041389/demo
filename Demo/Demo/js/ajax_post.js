@@ -11,7 +11,7 @@ class AjaxPostClass{
     do_ajax_post(){
         let callback_fun = this._callback_fun;
         ajax_mask();
-        console.log(this._post_data);
+        //console.log(this._post_data);
         $.ajax({
             url: this._url,
             type: 'POST',
@@ -32,7 +32,7 @@ class AjaxPostClass{
     do_ajax_get(){
         let callback_fun = this._callback_fun;
         ajax_mask();
-        console.log(this._post_data);
+        //console.log(this._post_data);
         $.ajax({
             url: this._url,
             type: 'get',
@@ -119,7 +119,7 @@ function ajax_mask(){
         opacity: .5, 
         color: '#ffff' 
       },
-      message: `<img src="static/images/loading.gif"/>`,
+      message: `<img src="images/loading.gif"/>`,
       baseZ: 99999
     });
   }

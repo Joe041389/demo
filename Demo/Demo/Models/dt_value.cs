@@ -7,7 +7,6 @@ namespace Demo.Models
 {
     public class dt_value
     {
-        public int dt_id { get; set; }
 
         public string location_code { get; set; }
 
