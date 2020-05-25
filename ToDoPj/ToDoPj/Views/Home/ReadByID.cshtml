@@ -1,0 +1,42 @@
+﻿@model ToDoPj.Models.tToDo
+
+@{
+    ViewBag.Title = "代辦事項";
+}
+
+
+
+<div>
+    <h4>@Model.fTitle</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fImage)
+        </dt>
+
+        <dd>
+            <img src="~/images/@Model.fImage" width="32" />
+            @*@Html.DisplayFor(model => model.fImage)*@
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("編輯", "Edit", new { id = Model.fId }) 
+</p>
