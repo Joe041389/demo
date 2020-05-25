@@ -1,11 +1,12 @@
-﻿@model IPagedList<ToDoPj.Models.tToDo>
+﻿@using PagedList.Mvc;
+@using PagedList;
+@model IPagedList<ToDoPj.Models.tToDo>
 
 @{
     ViewBag.Title = "代辦事項";
 }
 
-@using PagedList.Mvc;
-@using PagedList;
+
 
 <h2>代辦事項</h2>
 
@@ -57,7 +58,7 @@
         }
 
     </table>
-    @Html.PagedListPager(Model,i =>Url.Action("Index", "Home", new { i, search = Request.QueryString["search"] }))
+    @Html.PagedListPager(Model, i => Url.Action("Index", "Home", new { i, search = Request.QueryString["search"] }))
 }
 else
 {
