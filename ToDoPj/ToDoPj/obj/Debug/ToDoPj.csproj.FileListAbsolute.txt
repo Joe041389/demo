@@ -78,3 +78,8 @@ D:\GithubProject\ToDoPj\ToDoPj\obj\Debug\ToDoPj.csproj.CopyComplete
 D:\GithubProject\ToDoPj\ToDoPj\obj\Debug\ToDoPj.dll
 D:\GithubProject\ToDoPj\ToDoPj\obj\Debug\ToDoPj.pdb
 D:\GithubProject\ToDoPj\ToDoPj\obj\Debug\ToDoPj.csprojAssemblyReference.cache
+D:\GithubProject\ToDoPj\ToDoPj\bin\PagedList.dll
+D:\GithubProject\ToDoPj\ToDoPj\bin\PagedList.Mvc.dll
+D:\GithubProject\ToDoPj\ToDoPj\bin\PagedList.xml
+D:\GithubProject\ToDoPj\ToDoPj\bin\PagedList.Mvc.xml
+D:\GithubProject\ToDoPj\ToDoPj\bin\zh-Hant\EntityFramework.SqlServer.resources.dll

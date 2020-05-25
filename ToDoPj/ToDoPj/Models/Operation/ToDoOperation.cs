@@ -42,19 +42,24 @@ namespace ToDoPj.Models.Operation
         {
             try
             {
-                IQueryable<tToDo> ToDoList = _db.DbSettToDo.Select(s => s);
+                //IQueryable<tToDo> ToDoList = _db.DbSettToDo.Select(s => s);
                 var Title = oToDo.fTitle;
                 var Image = oToDo.fImage;
+                IQueryable<tToDo> ToDoList = from _ToDoList in _db.DbSettToDo
+                                             where _ToDoList.fTitle.Contains(Title) || _ToDoList.fImage.Contains(Image)
+                                             select _ToDoList;
+                //if (!string.IsNullOrWhiteSpace(Title))
+                //{
+                //    ToDoList = ToDoList.Where(t => t.fTitle.Contains(Title));
+                //}
 
-                if (!string.IsNullOrWhiteSpace(Title))
-                {
-                    ToDoList = ToDoList.Where(t => t.fTitle.Contains(Title));
-                }
+                //if (!string.IsNullOrWhiteSpace(Image))
+                //{
+                //    ToDoList = ToDoList.Where(m => m.fImage.Contains(Image));
+                //}
 
-                if (!string.IsNullOrWhiteSpace(Image))
-                {
-                    ToDoList = ToDoList.Where(m => m.fImage.Contains(Image));
-                }
+
+
 
                 return ToDoList;
             }
@@ -104,7 +109,7 @@ namespace ToDoPj.Models.Operation
         {
             try
             {
-                IQueryable<tToDo> ToDoList = _db.DbSettToDo;
+                IQueryable<tToDo> ToDoList = _db.DbSettToDo.OrderByDescending( s => s.fDate);
                 return ToDoList;
             }
             catch 

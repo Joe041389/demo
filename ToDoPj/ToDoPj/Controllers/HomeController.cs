@@ -6,6 +6,8 @@ using System.Web;
 using System.Web.Mvc;
 using ToDoPj.Models;
 using ToDoPj.Models.Operation;
+using PagedList.Mvc;
+using PagedList;
 
 namespace ToDoPj.Controllers
 {
@@ -23,10 +25,10 @@ namespace ToDoPj.Controllers
         
 
         // Get: ToDoList
-        public ActionResult Index()
+        public ActionResult Index(int? i)
         {
             IQueryable<tToDo> ToDoList = _ToDoOperation.ListAll();
-            return View(ToDoList);
+            return View(ToDoList.ToList().ToPagedList(i ?? 1, 2));
         }
 
         public ActionResult Create()
@@ -77,7 +79,7 @@ namespace ToDoPj.Controllers
             if (!string.IsNullOrWhiteSpace(Title))
             {
                 sb.Append(Title);
-                sb.Append("、");
+                sb.Append(" ");
             }
 
             if (!string.IsNullOrWhiteSpace(Image))
@@ -96,7 +98,7 @@ namespace ToDoPj.Controllers
 
             sb.Append(" 結果如下");
             ViewBag.SearchResult = sb.ToString();
-            return View("ReadByKeywordResult", ToDoList);
+            return View("ReadByKeywordResult", ToDoList.ToList());
         }
 
 
