@@ -5,7 +5,7 @@
   - demo.sql為 Database schema
 
 # ToDoPj
-- ToDoPj MVC專案 => 代辦事項管理
+- ToDoPj MVC專案 => 代辦事項管理CURD
 - 資料庫資料處理 使用 Entity Framework
 - ToDo.sql為 Database schema
   
