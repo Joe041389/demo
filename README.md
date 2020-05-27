@@ -8,4 +8,9 @@
 - ToDoPj MVC專案 => 代辦事項管理CURD
 - 資料庫資料處理 使用 Entity Framework
 - ToDo.sql為 Database schema
+
+# UploadImg
+- UploadImg MVC專案 => 相片管理CURD
+- 資料庫資料處理 使用 Entity Framework
+- demo.sql 裡面 tb_image資料表 為 schema
   

@@ -1,0 +1,35 @@
+﻿@model UploadImg.Models.tb_image
+
+@{
+    ViewBag.Title = "詳細資料";
+}
+
+<h2>詳細資料</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImagePath)
+        </dt>
+
+        <dd>
+            <div class="photo-display">
+                <img class="card-img-top img-thumbnail" width="100" src="@Model.ImagePath" />
+            </div>
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("編輯", "Edit", new { id = Model.ImageId }) |
+    @Html.ActionLink("回列表", "List")
+</p>

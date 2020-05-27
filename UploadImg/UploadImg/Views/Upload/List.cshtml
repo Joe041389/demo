@@ -1,0 +1,62 @@
+﻿@model IEnumerable<UploadImg.Models.tb_image>
+
+@{
+    /**/
+
+    ViewBag.Title = "資料列表";
+}
+
+
+<h2>@Html.ActionLink("新增圖檔", "SaveImage", "", new { @class = "btn btn - primary" })</h2>
+
+<nav class="navbar navbar-light bg-light justify-content-between">
+
+    @using (Html.BeginForm("List", "Upload", FormMethod.Post, new { @class = "form-inline" }))
+    {
+        <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="Search" required>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜尋</button>
+
+    }
+
+</nav>
+
+
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row">
+
+            @foreach (var item in Model)
+            {
+
+                <div class="col-md-3">
+                    <div class="card mb-4 shadow-sm">
+                        <h3 class="card-title">
+                            @Html.DisplayFor(modelItem => item.Title)
+                        </h3>
+                        @if (item.ImagePath != null)
+                        {
+                            <div class="photo-display">
+                                <img class="card-img-top img-thumbnail" width="100" src="@item.ImagePath" />
+                            </div>
+                        }
+
+                        <div class="card-body">
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    @Html.ActionLink("編輯", "Edit", new { id = item.ImageId }) |
+                                    @Html.ActionLink("詳細資料", "Details", new { id = item.ImageId }) |
+                                    @Html.ActionLink("刪除", "Delete", new { id = item.ImageId }, new { onclick = "return confirm('確定要刪除嗎?')" })
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            }
+
+        </div>
+    </div>
+</div>
