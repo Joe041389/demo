@@ -13,4 +13,9 @@
 - UploadImg MVC專案 => 相片管理CURD
 - 資料庫資料處理 使用 Entity Framework
 - demo.sql 裡面 tb_image資料表 為 schema
+
+# WebAPI_Demo
+- WebAPI_Demo MVC Web API專案 => 顧客管理 API CURD
+- 資料庫資料處理 使用 Entity Framework(在實作Operation的時候也可以使用ADO.net)
+- Customer.sql為 Database schema
   
