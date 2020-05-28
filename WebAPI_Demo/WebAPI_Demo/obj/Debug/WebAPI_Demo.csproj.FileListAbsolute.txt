@@ -89,4 +89,3 @@ D:\GithubProject\WebAPI_Demo\WebAPI_Demo\obj\Debug\WebAPI_Demo.csproj.CopyComple
 D:\GithubProject\WebAPI_Demo\WebAPI_Demo\obj\Debug\WebAPI_Demo.dll
 D:\GithubProject\WebAPI_Demo\WebAPI_Demo\obj\Debug\WebAPI_Demo.pdb
 D:\GithubProject\WebAPI_Demo\WebAPI_Demo\bin\zh-Hant\EntityFramework.SqlServer.resources.dll
-D:\GithubProject\WebAPI_Demo\WebAPI_Demo\obj\Debug\WebAPI_Demo.csprojAssemblyReference.cache

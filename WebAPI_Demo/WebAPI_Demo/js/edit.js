@@ -59,8 +59,8 @@ function EditCustomer() {
     }
 
     console.log(formData);
-    let AjaxPut = new AjaxPostClass('/api/Customer', formData, callback_add_customer_fun);
-    AjaxPut.do_ajax_put();
+    let AjaxPut = new AjaxPostClass('/api/Customer/Edit', formData, callback_add_customer_fun);
+    AjaxPut.do_ajax_post();
 
     function callback_add_customer_fun(ret) {
 

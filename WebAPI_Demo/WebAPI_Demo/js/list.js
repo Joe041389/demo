@@ -11,7 +11,7 @@ function GetCustomerList() {
 
     var formData = {}
     
-    let AjaxGet = new AjaxPostClass('/api/Customer', formData, callback_customer_fun);
+    let AjaxGet = new AjaxPostClass('/api/Customer/List', formData, callback_customer_fun);
     AjaxGet.do_ajax_get();
 
     function callback_customer_fun(ret) {
@@ -45,7 +45,7 @@ function SearchCustomer() {
     }
 
     console.log(formData);
-    let AjaxGet = new AjaxPostClass('/api/Customer/', formData, callback_search_customer_fun);
+    let AjaxGet = new AjaxPostClass('/api/Customer/GetByKeyword', formData, callback_search_customer_fun);
     AjaxGet.do_ajax_get();
 
     function callback_search_customer_fun(ret) {

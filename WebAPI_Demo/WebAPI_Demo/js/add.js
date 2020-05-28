@@ -56,7 +56,7 @@ function AddCustomer() {
     }
 
     console.log(formData);
-    let AjaxPost = new AjaxPostClass('/api/Customer', formData, callback_add_customer_fun);
+    let AjaxPost = new AjaxPostClass('/api/Customer/Add', formData, callback_add_customer_fun);
     AjaxPost.do_ajax_post();
 
     function callback_add_customer_fun(ret) {

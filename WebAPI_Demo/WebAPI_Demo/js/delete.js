@@ -10,11 +10,13 @@
 function DeleteCustomer() {
 
     //收集表單欄位資料
-    var formData = {}
+    var formData = {
+        Id: $("#lbFid").html()
+    }
 
     console.log(formData);
-    let AjaxDelete = new AjaxPostClass('/api/Customer/' + encodeURI($("#lbFid").html()), formData, callback_delete_customer_fun);
-    AjaxDelete.do_ajax_delete();
+    let AjaxDelete = new AjaxPostClass('/api/Customer/Delete', formData, callback_delete_customer_fun);
+    AjaxDelete.do_ajax_get();
 
     function callback_delete_customer_fun(ret) {
 
