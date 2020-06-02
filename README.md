@@ -4,17 +4,17 @@
   - 資料庫資料處理 使用 ADO.net 
   - demo.sql為 Database schema
 
-# ToDoPj
+# 代辦事項管理專案
 - ToDoPj MVC專案 => 代辦事項管理CURD
 - 資料庫資料處理 使用 Entity Framework
 - ToDo.sql為 Database schema
 
-# UploadImg
+# 相片管理專案
 - UploadImg MVC專案 => 相片管理CURD
 - 資料庫資料處理 使用 Entity Framework
 - demo.sql 裡面 tb_image資料表 為 schema
 
-# WebAPI_Demo
+# 顧客管理專案
 - WebAPI_Demo MVC Web API專案 => 顧客管理 API CURD
 - 資料庫資料處理 使用 Entity Framework(在實作Operation的時候也可以使用ADO.net)
 - Customer.sql為 Database schema
