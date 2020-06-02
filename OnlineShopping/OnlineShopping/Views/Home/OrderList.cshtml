@@ -1,0 +1,120 @@
+﻿@model OnlineShopping.Models.ViewModel.VMOrdersDetails
+
+@{
+    ViewBag.Title = "會員訂單列表";
+}
+
+<h2>會員訂單列表</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(m => m.OrderList)*@
+            訂單編號
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(m => m.Receiver)*@
+            收件人
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(m => m.ReceiverEmail)*@
+            收件人信箱
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(m => m.RecevierAddr)*@
+            收件人地址
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.OrderList)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Receiver)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReceiverEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecevierAddr)
+            </td>
+            <td>
+                <a href="@Url.Action("OrderList")?OrderId=@item.OrderId" class="btn btn-info">訂單明細</a>
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+@if (Model.OrderDetailsList != null)
+{ 
+        <table class="table">
+            <tr>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.OrderId)*@
+                    訂單編號
+                </th>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.MemberId)*@
+                    @*會員編號*@
+                    圖片
+                </th>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.PId)*@
+                    產品編號
+                </th>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.PName)*@
+                    品名
+                </th>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.PPrice)*@
+                    價格
+                </th>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.Qty)*@
+                    數量
+                </th>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.IsApproved)*@
+
+                </th>
+
+            </tr>
+
+            @foreach (var item in Model.OrderDetailsList)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OrderId)
+                    </td>
+                    <td>
+                        @* @Html.DisplayFor(modelItem => item.MemberId)*@
+                        <img src="~/images/@item.Image" style="width:20%" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PPrice)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Qty)
+                    </td>
+                    <td>
+                       @* @Html.DisplayFor(modelItem => item.IsApproved)*@
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+}

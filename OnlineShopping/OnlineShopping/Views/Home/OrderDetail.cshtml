@@ -1,0 +1,63 @@
+﻿@model IEnumerable<OnlineShopping.Models.OrderDetails>
+
+@{
+    ViewBag.Title = "訂單明細";
+}
+
+<h2>訂單明細</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MemberId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qty)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsApproved)
+        </th>
+
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MemberId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Qty)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsApproved)
+        </td>
+
+    </tr>
+}
+
+</table>
