@@ -18,4 +18,9 @@
 - WebAPI_Demo MVC Web API專案 => 顧客管理 API CURD
 - 資料庫資料處理 使用 Entity Framework(在實作Operation的時候也可以使用ADO.net)
 - Customer.sql為 Database schema
+
+# 線上購物車專案(未包含金流)
+- OnlineShopping專案 => 線上購物
+- 資料庫資料處理 使用 Entity Framework(在實作Operation的時候也可以使用ADO.net)
+- OnlineShopping.sql為 Database schema
   
