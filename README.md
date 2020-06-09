@@ -1,4 +1,4 @@
-# Demo
+# 中央氣象局開放資料平臺之資料擷取API
 - Demo MVC專案 => 中央氣象局開放資料平臺之資料擷取API
   - HomeController的 Demo(顯示撈取的公開資料) 及 Demo_add_data(將資料存入資料庫)
   - 資料庫資料處理 使用 ADO.net 
@@ -20,7 +20,7 @@
 - Customer.sql為 Database schema
 
 # 線上購物車專案(未包含金流)
-- OnlineShopping專案 => 線上購物
+- OnlineShopping 專案 => 線上購物
 - 資料庫資料處理 使用 Entity Framework(在實作Operation的時候也可以使用ADO.net)
 - OnlineShopping.sql為 Database schema
   
