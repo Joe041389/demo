@@ -73,7 +73,6 @@ D:\GithubProject\ToDoPj\ToDoPj\bin\zh-Hant\System.Web.Webpages.Deployment.resour
 D:\GithubProject\ToDoPj\ToDoPj\bin\zh-Hant\System.Web.Webpages.Razor.resources.dll
 D:\GithubProject\ToDoPj\ToDoPj\bin\zh-Hant\System.Web.Helpers.resources.dll
 D:\GithubProject\ToDoPj\ToDoPj\bin\zh-Hant\System.Web.Mvc.resources.dll
-D:\GithubProject\ToDoPj\ToDoPj\obj\Debug\ToDoPj.csproj.CoreCompileInputs.cache
 D:\GithubProject\ToDoPj\ToDoPj\obj\Debug\ToDoPj.csproj.CopyComplete
 D:\GithubProject\ToDoPj\ToDoPj\obj\Debug\ToDoPj.dll
 D:\GithubProject\ToDoPj\ToDoPj\obj\Debug\ToDoPj.pdb

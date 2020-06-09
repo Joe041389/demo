@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="panel">
+    <div class="page-header">
+        <h3>AngularJs APP</h3>
+    </div>
+    <h4 ng-controller="dayCtrl" highlight="Sunday">Today is {{ day || "(unknown)" | dayName}}</h4>
+    <h4 ng-controller="tomorrowCtrl">Tomorrow is {{ day || "(unknown)" | dayName}} </h4>
+    <input type="text" value="" ng-model="StrTest" />
+    {{StrTest}}
+    <hr />
+    <div id="todoPanel" class="panel" ng-controller="listCtrl">
+        <div class="page-header">
+            <h3>To Do List</h3>
+        </div>
+
+    </div>
+
+</div>
+  
+<script src="~/js/Angular/NgApp.js"></script>
+<script src="~/js/Angular/Controllers.js"></script>
+<script src="~/js/Angular/Filters.js"></script>
+<script src="~/js/Angular/Directs.js"></script>
+<script src="~/js/Angular/Services.js"></script>
+<script src="~/js/Angular/Constants.js"></script>
+<script src="~/js/Angular/NgConfig.js"></script>
+<script src="~/js/Angular/NgRun.js"></script>

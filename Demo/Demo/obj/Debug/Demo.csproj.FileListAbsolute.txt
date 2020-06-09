@@ -106,7 +106,6 @@ D:\GithubProject\Demo\Demo\bin\Microsoft.Owin.Security.Google.xml
 D:\GithubProject\Demo\Demo\bin\Microsoft.Owin.Security.Twitter.xml
 D:\GithubProject\Demo\Demo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\GithubProject\Demo\Demo\obj\Debug\Demo.csprojAssemblyReference.cache
-D:\GithubProject\Demo\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache
 D:\GithubProject\Demo\Demo\obj\Debug\Demo.csproj.CopyComplete
 D:\GithubProject\Demo\Demo\obj\Debug\Demo.dll
 D:\GithubProject\Demo\Demo\obj\Debug\Demo.pdb

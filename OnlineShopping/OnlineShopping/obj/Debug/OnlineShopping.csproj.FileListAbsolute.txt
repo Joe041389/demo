@@ -73,7 +73,6 @@ D:\GithubProject\OnlineShopping\OnlineShopping\bin\zh-Hant\System.Web.Webpages.D
 D:\GithubProject\OnlineShopping\OnlineShopping\bin\zh-Hant\System.Web.Webpages.Razor.resources.dll
 D:\GithubProject\OnlineShopping\OnlineShopping\bin\zh-Hant\System.Web.Helpers.resources.dll
 D:\GithubProject\OnlineShopping\OnlineShopping\bin\zh-Hant\System.Web.Mvc.resources.dll
-D:\GithubProject\OnlineShopping\OnlineShopping\obj\Debug\OnlineShopping.csproj.CoreCompileInputs.cache
 D:\GithubProject\OnlineShopping\OnlineShopping\obj\Debug\OnlineShopping.csproj.CopyComplete
 D:\GithubProject\OnlineShopping\OnlineShopping\obj\Debug\OnlineShopping.dll
 D:\GithubProject\OnlineShopping\OnlineShopping\obj\Debug\OnlineShopping.pdb

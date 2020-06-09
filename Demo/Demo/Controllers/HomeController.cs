@@ -21,6 +21,19 @@ namespace Demo.Controllers
             return View();
         }
 
+        public ActionResult AngularPage()
+        {
+            return View();
+        }
+
+        public ActionResult Question()
+        {
+            Question2 qq = new Question2();
+            int ReturnVal = qq.Run();
+            ViewBag.ReturnVal = ReturnVal;
+            return View();
+        }
+
 
         [HttpPost]
         public ActionResult Demo_add_data(string dt, List<dt_value> dt_values)

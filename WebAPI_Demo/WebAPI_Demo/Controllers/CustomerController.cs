@@ -13,6 +13,10 @@ namespace WebAPI_Demo.Controllers
     {
         public readonly CustomerOperation _CustomerOperation = new CustomerOperation();
         
+        /// <summary>
+        /// 取得顧客列表
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [ActionName("List")]
         // GET: api/Customer
@@ -23,6 +27,11 @@ namespace WebAPI_Demo.Controllers
 
         }
 
+        /// <summary>
+        /// 透過顧客ID取得顧客資料
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
         [HttpGet]
         [ActionName("GetByID")]
         // GET: api/Customer/5
@@ -32,6 +41,11 @@ namespace WebAPI_Demo.Controllers
             return oCustomer;
         }
 
+        /// <summary>
+        /// 透過關鍵字取得顧客資料
+        /// </summary>
+        /// <param name="Keyword"></param>
+        /// <returns></returns>
         [HttpGet]
         [ActionName("GetByKeyword")]
         // GET: api/Customer/xxxx
@@ -41,6 +55,12 @@ namespace WebAPI_Demo.Controllers
             return CustomerList;
         }
 
+
+        /// <summary>
+        /// 新增顧客資料
+        /// </summary>
+        /// <param name="oCustomer"></param>
+        /// <returns></returns>
         [HttpPost]
         [ActionName("Add")]
         // POST: api/Customer
@@ -50,7 +70,11 @@ namespace WebAPI_Demo.Controllers
             return AddResult;
         }
 
-
+        /// <summary>
+        /// 修改顧客資料
+        /// </summary>
+        /// <param name="oCustomer"></param>
+        /// <returns></returns>
         [HttpPost]
         [ActionName("Edit")]
         // PUT: api/Customer/
@@ -60,6 +84,12 @@ namespace WebAPI_Demo.Controllers
             return UpdateResult;
         }
 
+
+        /// <summary>
+        /// 刪除顧客資料
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
         [HttpGet]
         [ActionName("Delete")]
         // DELETE: api/Customer/1
