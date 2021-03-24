@@ -89,9 +89,22 @@ namespace ToDoPj.Models.Operation
         {
             try
             {
-               tToDo oToDo =  _db.DbSettToDo.Find(Id);
+                //第一種方法
+                tToDo iToDo1 = (from _ToDo in _db.DbSettToDo
+                              where _ToDo.fId == Id
+                              select _ToDo).FirstOrDefault();
+
+                //第二種方法
+                tToDo iToDo2 = _db.DbSettToDo.FirstOrDefault(t => t.fId == Id);
+
+                //第三種方法
+                tToDo iToDo3 = _db.DbSettToDo.Where(t => t.fId == Id).FirstOrDefault();
+
+                //第四種方法
+                tToDo oToDo =  _db.DbSettToDo.Find(Id);
                 if (oToDo != null)
                 {
+                   
                     _db.DbSettToDo.Remove(oToDo);
                     _db.SaveChanges();
                     return true;
