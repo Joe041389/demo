@@ -1,0 +1,5 @@
+D:\GithubProject\OnlineShopping\Service\bin\Debug\Service.dll
+D:\GithubProject\OnlineShopping\Service\bin\Debug\Service.pdb
+D:\GithubProject\OnlineShopping\Service\obj\Debug\Service.csprojAssemblyReference.cache
+D:\GithubProject\OnlineShopping\Service\obj\Debug\Service.dll
+D:\GithubProject\OnlineShopping\Service\obj\Debug\Service.pdb

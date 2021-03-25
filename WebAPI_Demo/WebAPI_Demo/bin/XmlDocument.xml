@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebAPI_Demo</name>
+    </assembly>
+    <members>
+        <member name="M:WebAPI_Demo.Controllers.CustomerController.Get">
+            <summary>
+            取得顧客列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI_Demo.Controllers.CustomerController.Get(System.Int32)">
+            <summary>
+            透過顧客ID取得顧客資料
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI_Demo.Controllers.CustomerController.GetCustomSearch(System.String)">
+            <summary>
+            透過關鍵字取得顧客資料
+            </summary>
+            <param name="Keyword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI_Demo.Controllers.CustomerController.Post(WebAPI_Demo.Models.tCustomer)">
+            <summary>
+            新增顧客資料
+            </summary>
+            <param name="oCustomer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI_Demo.Controllers.CustomerController.Put(WebAPI_Demo.Models.tCustomer)">
+            <summary>
+            修改顧客資料
+            </summary>
+            <param name="oCustomer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPI_Demo.Controllers.CustomerController.Delete(System.Int32)">
+            <summary>
+            刪除顧客資料
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

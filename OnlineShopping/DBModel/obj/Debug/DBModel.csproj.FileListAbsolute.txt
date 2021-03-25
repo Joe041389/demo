@@ -1,0 +1,5 @@
+D:\GithubProject\OnlineShopping\DBModel\obj\Debug\DBModel.csprojAssemblyReference.cache
+D:\GithubProject\OnlineShopping\DBModel\bin\Debug\DBModel.dll
+D:\GithubProject\OnlineShopping\DBModel\bin\Debug\DBModel.pdb
+D:\GithubProject\OnlineShopping\DBModel\obj\Debug\DBModel.dll
+D:\GithubProject\OnlineShopping\DBModel\obj\Debug\DBModel.pdb
