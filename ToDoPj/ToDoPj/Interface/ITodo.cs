@@ -10,7 +10,7 @@ namespace ToDoPj.Interface
     {
         bool Create(T Itme);
 
-        T ReadById(int Id);
+        T ReadById(int? Id);
 
         IQueryable<T> ReadByKeyword(T Item);
 

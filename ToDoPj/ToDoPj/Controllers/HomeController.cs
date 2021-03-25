@@ -22,7 +22,11 @@ namespace ToDoPj.Controllers
             _db.Dispose();
             base.Dispose(disposing);
         }
-        
+
+        protected override void HandleUnknownAction(string actionName)
+        {
+            Response.Redirect("/", true);
+        }
 
         // Get: ToDoList
         public ActionResult Index(int? i)
@@ -110,9 +114,19 @@ namespace ToDoPj.Controllers
         }
 
   
-        public ActionResult Update(int Id=1)
+        public ActionResult Update(int? Id)
         {
+            if (Id == null)
+            {
+                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
+            }
+
             tToDo oToDo = _ToDoOperation.ReadById(Id);
+
+            if (oToDo == null)
+            {
+                return HttpNotFound();
+            }
             return View(oToDo);
         }
 
@@ -132,8 +146,17 @@ namespace ToDoPj.Controllers
 
         public ActionResult Delete(int Id)
         {
+            tToDo oToDo = _ToDoOperation.ReadById(Id);
+            return View(oToDo);
+        }
+
+        [HttpPost,ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConnfirm(int Id)
+        {
             _ToDoOperation.Delete(Id);
             return RedirectToAction("Index");
         }
+
     }
 }

@@ -24,12 +24,23 @@ namespace ToDoPj.Models.Operation
             }
         }
 
-        public tToDo ReadById(int Id)
+        public tToDo ReadById(int? Id)
         {
             try
             {
-                tToDo oTodo =  _db.DbSettToDo.Find(Id);
-                return oTodo;
+                //第一種方法
+                tToDo iToDo1 = (from _ToDo in _db.DbSettToDo
+                                where _ToDo.fId == Id
+                                select _ToDo).FirstOrDefault();
+
+                //第二種方法
+                tToDo iToDo2 = _db.DbSettToDo.FirstOrDefault(t => t.fId == Id);
+
+                //第三種方法
+                tToDo iToDo3 = _db.DbSettToDo.Where(t => t.fId == Id).FirstOrDefault();
+
+                tToDo iTodo =  _db.DbSettToDo.Find(Id);
+                return iTodo;
             }
             catch 
             {

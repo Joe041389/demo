@@ -22,9 +22,7 @@ namespace UploadImage.Controllers
 
         protected override void HandleUnknownAction(string actionName)
         {
-            Redirect("http://localhost:56956/");
-
-            base.HandleUnknownAction(actionName);
+            Response.Redirect("/", true);
         }
 
         public ActionResult List(string search)
